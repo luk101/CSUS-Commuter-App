@@ -1,0 +1,45 @@
+nav {
+    background-color: #ffffff;
+}
+header {
+    margin: 0px;
+    height:200px;
+    background-image: linear-gradient(90deg, rgba(196,182,129,0) 60%, rgba(0,78,56,0.6) 60%, rgba(0,78,56,1) 100%), url('structurev-2000.jpg');
+    background-size: cover;
+    text-align: right;
+}
+body {
+  background-color: #00573d;
+  margin: 0px;
+  font-family: sans-serif;
+}
+hr {
+    height: 7px;
+    border-width: 0px;
+    background-color: #c4b581;
+    margin: 0px;
+}
+.banner {
+    padding-top: 20px;
+    margin: 0px;
+    width: 40%;
+    height: 200px;
+    float: right;
+}
+.banner_text {
+    margin: 0px;
+    padding: 10px;
+    color: #ffffff;
+}
+.banner_alt_text {
+        margin: 0px;
+        padding: 10px;
+        color: #f0e1b0;
+}
+.text {
+    margin: 30px;
+    padding: 20px;
+    border-radius: 25px;
+    background: #021e14;
+    color: #ffffff;
+}
