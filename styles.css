@@ -19,8 +19,28 @@ hr {
     background-color: #c4b581;
     margin: 0px;
 }
+h1 {
+  color: #f0e1b0;
+  text-align: center;
+}
+button {
+  background-color: #f0e1b0;
+  width: 10em;
+  height: 4em;
+  border-radius: 10px;
+}
+a, a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+a:hover {
+  color: #f0e1b0;
+}
+.button {
+  text-align: center;
+  margin: 30px;
+}
 .banner {
-    padding-top: 20px;
     margin: 0px;
     width: 40%;
     height: 200px;
@@ -28,16 +48,19 @@ hr {
 }
 .banner_text {
     margin: 0px;
-    padding: 10px;
+    padding: 20px;
     color: #ffffff;
 }
 .banner_alt_text {
         margin: 0px;
-        padding: 10px;
+        padding: 20px;
         color: #f0e1b0;
 }
 .text {
-    margin: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
     padding: 20px;
     border-radius: 25px;
     background: #021e14;
