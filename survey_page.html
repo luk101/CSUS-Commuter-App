@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="survey_style.css">
+        <title>FMZ Commuting Survey | Sacramento State</title>
+    </head>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <style>
+        @media only screen and (max-width: 700px) {
+            header {
+                background-image: linear-gradient(270deg, rgba(0,78,56,0.3) 5%, rgba(0,78,56,.6) 100%), url('structurev-2000.jpg');
+            }
+            .banner {
+                width: 100%;
+            }
+            .submit{
+                margin-left: 30%;
+                background-color: #ffffff;
+                border-radius: 8px;
+                color: rgb(0,78,56);
+            }
+            
+        }
+    </style>
+    <nav>
+        <img src="Primary_Horizontal_3_Color_gld_hnd.png" alt="Sacramento State University Logo" style="width:187px; height:51.25">
+    </nav>
+    <header>
+            <div class="banner">
+                <h2 class="banner_text">FMZ<br> Commuting <br> Survey</h2>
+                <h3 class="banner_alt_text">Transportation Options</h3>
+            </div>
+    </header>
+    <hr class="first">
+    <hr class="second">
+    <body>
+            <div class="surveyLayout">
+                <h2 class="timeTraveled">Time of travel <br></h2>
+                <h3 class="time">
+                    <form action="">
+                        <label for="hrs">Hr(s):</label>
+                        <input type="text" id="hrs" name="hrs">
+                        <label for="mins">&ensp;Min(s):</label>
+                        <input type="text" id="mins" name="mins">
+                    </form>
+                </h3>
+                <hr class="third">
+                <h2 class="haveCar">Have a car?<br></h2>
+                <h3 class="car">
+                    <form action="">
+                        <input type="checkbox" id="yes" name="yes" value="checkbox">
+                        <label for="yes">Check if you have a car and enter the information below. <br> <br> </label>
+                        <label for="cars">Type of Car:</label>
+                        <select name="cars" id="cars">
+                            <option value=""></option>
+                            <option value="coupe">Coupe</option>
+                            <option value="sedan">Sedan</option>
+                            <option value="suv">SUV</option>
+                            <option value="truck">Truck</option>
+                            <option value="van">Van</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <label for="yes">&ensp;&ensp;MPG: </label>
+                        <input type="text" id="mpg" name="yes">
+                    </form> 
+                </h3>
+                <hr class="fourth">
+                <h2 class="canCarpool">Available for Carpool? <br></h2>
+                <h3 class="check"></h3>
+                <h3 class="carpool">
+                    <label for="yes1">Yes: </label>
+                    <input type="radio" id="yes2" name="choice2" value="yes">
+                    <label for="no1>">No: </label>
+                    <input type="radio" id="no2" name="choice2" value="no">
+                </h3>
+                <hr class="fifth">
+                <h2 class="distance">Distance from Campus <br></h2>
+                <h3 class="distanceAmount">
+                    <form action="">
+                        <input type="text" id="mi" name="mi">
+                        <label for="hrs">&ensp;Miles(s):</label>
+                    </form>
+                </h3>
+                <hr class="sixth">
+                <button class="submit">Submit</button>
+            </div>
+            <hr class="seventh">
+    </body>
+</html>
