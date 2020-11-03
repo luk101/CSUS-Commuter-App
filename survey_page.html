@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="survey_style.css">
         <title>FMZ Commuting Survey | Sacramento State</title>
+        <script src="car.js"></script>
     </head>
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <style>
@@ -20,7 +21,6 @@
                 border-radius: 8px;
                 color: rgb(0,78,56);
             }
-            
         }
     </style>
     <nav>
@@ -49,20 +49,20 @@
                 <h2 class="haveCar">Have a car?<br></h2>
                 <h3 class="car">
                     <form action="">
-                        <input type="checkbox" id="yes" name="yes" value="checkbox">
+                        <input type="checkbox" id="yes" name="yes" value="checkbox" onclick="show_hide()">
                         <label for="yes">Check if you have a car and enter the information below. <br> <br> </label>
-                        <label for="cars">Type of Car:</label>
-                        <select name="cars" id="cars">
-                            <option value=""></option>
-                            <option value="coupe">Coupe</option>
-                            <option value="sedan">Sedan</option>
-                            <option value="suv">SUV</option>
-                            <option value="truck">Truck</option>
-                            <option value="van">Van</option>
-                            <option value="other">Other</option>
-                        </select>
-                        <label for="yes">&ensp;&ensp;MPG: </label>
-                        <input type="text" id="mpg" name="yes">
+                        <label class="typeOfCar">Type of Car:</label for="cars">
+                            <select class="carlist" name="cars" id="cars">
+                                <option value=""></option>
+                                <option value="coupe">Coupe</option>
+                                <option value="sedan">Sedan</option>
+                                <option value="suv">SUV</option>
+                                <option value="truck">Truck</option>
+                                <option value="van">Van</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <label class="mpgLabel"><br>MPG:</label>
+                            <input type="text" id="mpg" name="yes" class="mpg">
                     </form> 
                 </h3>
                 <hr class="fourth">
