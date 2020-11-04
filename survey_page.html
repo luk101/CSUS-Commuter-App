@@ -10,7 +10,7 @@
     <style>
         @media only screen and (max-width: 700px) {
             header {
-                background-image: linear-gradient(270deg, rgba(0,78,56,0.3) 5%, rgba(0,78,56,.6) 100%), url('structurev-2000.jpg');
+                background-image: linear-gradient(270deg, rgba(0,78,56,0.3) 5%, rgba(0,78,56,.6) 100%), url('images/structurev-2000.jpg');
             }
             .banner {
                 width: 100%;
@@ -24,67 +24,68 @@
         }
     </style>
     <nav>
-        <img src="Primary_Horizontal_3_Color_gld_hnd.png" alt="Sacramento State University Logo" style="width:187px; height:51.25">
+        <img src="images/Primary_Horizontal_3_Color_gld_hnd.png" alt="Sacramento State University Logo" style="width:187px; height:51.25">
+        <hr>
     </nav>
     <header>
-            <div class="banner">
-                <h2 class="banner_text">FMZ<br> Commuting <br> Survey</h2>
-                <h3 class="banner_alt_text">Transportation Options</h3>
-            </div>
+        <div class="banner">
+            <h2 class="banner_text">FMZ<br> Commuting <br> Survey</h2>
+            <h3 class="banner_alt_text">Transportation Options</h3>
+        </div>
     </header>
     <hr class="first">
     <hr class="second">
     <body>
-            <div class="surveyLayout">
-                <h2 class="timeTraveled">Time of travel <br></h2>
-                <h3 class="time">
-                    <form action="">
-                        <label for="hrs">Hr(s):</label>
-                        <input type="text" id="hrs" name="hrs">
-                        <label for="mins">&ensp;Min(s):</label>
-                        <input type="text" id="mins" name="mins">
-                    </form>
-                </h3>
-                <hr class="third">
-                <h2 class="haveCar">Have a car?<br></h2>
-                <h3 class="car">
-                    <form action="">
-                        <input type="checkbox" id="yes" name="yes" value="checkbox" onclick="show_hide()">
-                        <label for="yes">Check if you have a car and enter the information below. <br> <br> </label>
-                        <label class="typeOfCar">Type of Car:</label for="cars">
-                            <select class="carlist" name="cars" id="cars">
-                                <option value=""></option>
-                                <option value="coupe">Coupe</option>
-                                <option value="sedan">Sedan</option>
-                                <option value="suv">SUV</option>
-                                <option value="truck">Truck</option>
-                                <option value="van">Van</option>
-                                <option value="other">Other</option>
-                            </select>
-                            <label class="mpgLabel"><br>MPG:</label>
-                            <input type="text" id="mpg" name="yes" class="mpg">
-                    </form> 
-                </h3>
-                <hr class="fourth">
-                <h2 class="canCarpool">Available for Carpool? <br></h2>
-                <h3 class="check"></h3>
-                <h3 class="carpool">
-                    <label for="yes1">Yes: </label>
-                    <input type="radio" id="yes2" name="choice2" value="yes">
-                    <label for="no1>">No: </label>
-                    <input type="radio" id="no2" name="choice2" value="no">
-                </h3>
-                <hr class="fifth">
-                <h2 class="distance">Distance from Campus <br></h2>
-                <h3 class="distanceAmount">
-                    <form action="">
-                        <input type="text" id="mi" name="mi">
-                        <label for="hrs">&ensp;Miles(s):</label>
-                    </form>
-                </h3>
-                <hr class="sixth">
-                <button class="submit">Submit</button>
-            </div>
-            <hr class="seventh">
+        <div class="surveyLayout">
+            <h2 class="timeTraveled">Time of travel <br></h2>
+            <h3 class="time">
+                <form action="">
+                    <label for="hrs">Hr(s):</label>
+                    <input type="text" id="hrs" name="hrs">
+                    <label for="mins">&ensp;Min(s):</label>
+                    <input type="text" id="mins" name="mins">
+                </form>
+            </h3>
+            <hr class="third">
+            <h2 class="haveCar">Have a car?<br></h2>
+            <h3 class="car">
+                <form action="">
+                    <input type="checkbox" id="yes" name="yes" value="checkbox" onclick="show_hide()">
+                    <label for="yes">Check if you have a car and enter the information below. <br> <br> </label>
+                    <label class="typeOfCar">Type of Car:</label for="cars">
+                        <select class="carlist" name="cars" id="cars">
+                            <option value=""></option>
+                            <option value="coupe">Coupe</option>
+                            <option value="sedan">Sedan</option>
+                            <option value="suv">SUV</option>
+                            <option value="truck">Truck</option>
+                            <option value="van">Van</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <label class="mpgLabel"><br>MPG:</label>
+                        <input type="text" id="mpg" name="yes" class="mpg">
+                </form>
+            </h3>
+            <hr class="fourth">
+            <h2 class="canCarpool">Available for Carpool? <br></h2>
+            <h3 class="check"></h3>
+            <h3 class="carpool">
+                <label for="yes1">Yes: </label>
+                <input type="radio" id="yes2" name="choice2" value="yes">
+                <label for="no1>">No: </label>
+                <input type="radio" id="no2" name="choice2" value="no">
+            </h3>
+            <hr class="fifth">
+            <h2 class="distance">Distance from Campus <br></h2>
+            <h3 class="distanceAmount">
+                <form action="">
+                    <input type="text" id="mi" name="mi">
+                    <label for="hrs">&ensp;Miles(s):</label>
+                </form>
+            </h3>
+            <hr class="sixth">
+            <button class="submit">Submit</button>
+        </div>
+        <hr class="seventh">
     </body>
 </html>
