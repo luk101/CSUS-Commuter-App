@@ -16,10 +16,19 @@
                 width: 100%;
             }
             .submit{
-                margin-left: 30%;
-                background-color: #ffffff;
+                margin-left: 38%;
+                background-color: #BEB86F;
                 border-radius: 8px;
                 color: rgb(0,78,56);
+            }
+            .carlist{
+                display: none;
+                margin-left: 42%;
+            }
+            .mpg{
+                margin-bottom: 0px;
+                margin-left: 45%;
+                display: none;
             }
         }
     </style>
@@ -33,20 +42,23 @@
             <h3 class="banner_alt_text">Transportation Options</h3>
         </div>
     </header>
-    <hr class="first">
-    <hr class="second">
+    <hr class="topGBorder">
+    <div class="breadCrumbs">
+
+    </div>
     <body>
         <div class="surveyLayout">
+            <hr class="layoutBorder">
             <h2 class="timeTraveled">Time of travel <br></h2>
             <h3 class="time">
                 <form action="">
                     <label for="hrs">Hr(s):</label>
-                    <input type="text" id="hrs" name="hrs">
+                    <input class="hrsText" type="text" id="hrs" name="hrs">
                     <label for="mins">&ensp;Min(s):</label>
-                    <input type="text" id="mins" name="mins">
+                    <input class="minsText" type="text" id="mins" name="mins">
                 </form>
             </h3>
-            <hr class="third">
+            <hr class="sections">
             <h2 class="haveCar">Have a car?<br></h2>
             <h3 class="car">
                 <form action="">
@@ -66,7 +78,7 @@
                         <input type="text" id="mpg" name="yes" class="mpg">
                 </form>
             </h3>
-            <hr class="fourth">
+            <hr class="sections">
             <h2 class="canCarpool">Available for Carpool? <br></h2>
             <h3 class="check"></h3>
             <h3 class="carpool">
@@ -75,17 +87,23 @@
                 <label for="no1>">No: </label>
                 <input type="radio" id="no2" name="choice2" value="no">
             </h3>
-            <hr class="fifth">
+            <hr class="sections">
             <h2 class="distance">Distance from Campus <br></h2>
             <h3 class="distanceAmount">
                 <form action="">
                     <input type="text" id="mi" name="mi">
-                    <label for="hrs">&ensp;Miles(s):</label>
+                    <label for="hrs">Mile(s)</label>
                 </form>
             </h3>
-            <hr class="sixth">
+            <hr class="sections">
             <button class="submit">Submit</button>
         </div>
-        <hr class="seventh">
+        <hr class="bottomGBorder">
+        <div class="footer">
+
+        </div>
+        <div class="footer2">
+
+        </div>
     </body>
 </html>
