@@ -1,134 +1,201 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="survey_styles.css">
-        <title>FMZ Commuting Survey | Sacramento State</title>
-        <script src="car.js"></script>
-    </head>
-    <meta content="width=device-width, initial-scale=1" name="viewport"/>
-    <style>
-        @media only screen and (max-width: 700px) {
-            header {
-                background-image: linear-gradient(270deg, rgba(0,78,56,0.3) 5%, rgba(0,78,56,.6) 100%), url('images/structurev-2000.jpg');
-            }
-            .banner {
-                width: 100%;
-            }
-            .submit{
-                margin-left: 38%;
-                background-color: #BEB86F;
-                border-radius: 8px;
-                color: rgb(0,78,56);
-            }
-            .carlist{
-                display: none;
-                margin-left: 42%;
-            }
-            .mpg{
-                margin-bottom: 0px;
-                margin-left: 45%;
-                display: none;
-            }
-            .footer img{
-                height: auto;
-                margin-top: 2%;
-                margin-left: 30%;
-                float: left;
-            }
-            .sacstate_info{
-                display: inline-block;
-                color: white;
-                margin-left: 30%;
-                margin-top: 3%;
-            }
-            .phoneNumber{
-                color: #c4b581;
-            }
-            .footer{
-                background-color: black;
-                height: 10%;
-                width: 100%;
-            }
-        }
-    </style>
-    <nav>
-        <img src="images/Primary_Horizontal_3_Color_gld_hnd.png" alt="Sacramento State University Logo" style="width:187px; height:51.25">
-        <hr>
-    </nav>
-    <header>
-        <div class="banner">
-            <h2 class="banner_text">FMZ<br> Commuting <br> Survey</h2>
-            <h3 class="banner_alt_text">Transportation Options</h3>
-        </div>
-    </header>
-    <hr class="topGBorder">
-    <div class="breadCrumbs">
-    </div>
-    <body>
-        <div class="surveyLayout">
-            <hr class="layoutBorder">
-            <h2 class="timeTraveled">Time of travel <br></h2>
-            <h3 class="time">
-                <form action="">
-                    <label for="hrs">Hr(s):</label>
-                    <input class="hrsText" type="text" id="hrs" name="hrs">
-                    <label for="mins">&ensp;Min(s):</label>
-                    <input class="minsText" type="text" id="mins" name="mins">
-                </form>
-            </h3>
-            <hr class="sections">
-            <h2 class="haveCar">Have a car?<br></h2>
-            <h3 class="car">
-                <form action="">
-                    <input type="checkbox" id="yes" name="yes" value="checkbox" onclick="show_hide()">
-                    <label for="yes">Check if you have a car and enter the information below. <br> <br> </label>
-                    <label class="typeOfCar">Type of Car:</label for="cars">
-                        <select class="carlist" name="cars" id="cars">
-                            <option value=""></option>
-                            <option value="coupe">Coupe</option>
-                            <option value="sedan">Sedan</option>
-                            <option value="suv">SUV</option>
-                            <option value="truck">Truck</option>
-                            <option value="van">Van</option>
-                            <option value="other">Other</option>
-                        </select>
-                        <label class="mpgLabel"><br>MPG:</label>
-                        <input type="text" id="mpg" name="yes" class="mpg">
-                </form>
-            </h3>
-            <hr class="sections">
-            <h2 class="canCarpool">Available for Carpool? <br></h2>
-            <h3 class="check"></h3>
-            <h3 class="carpool">
-                <label for="yes1">Yes: </label>
-                <input type="radio" id="yes2" name="choice2" value="yes">
-                <label for="no1>">No: </label>
-                <input type="radio" id="no2" name="choice2" value="no">
-            </h3>
-            <hr class="sections">
-            <h2 class="distance">Distance from Campus <br></h2>
-            <h3 class="distanceAmount">
-                <form action="">
-                    <input type="text" id="mi" name="mi">
-                    <label for="hrs">Mile(s)</label>
-                </form>
-            </h3>
-            <hr class="sections">
-            <button class="submit">Submit</button>
-        </div>
-        <hr class="bottomGBorder">
-        <div class="footer">
-            <img class="sacstate_logo" src="images/sacstate logo.png" alt="sacstate logo">
-            <div class="sacstate_info">
-                California State University, Sacramento <br>
-                6000 J Street, Sacramento, CA 95819 <br>
-                Camput Main Phone:
-                <a class="phoneNumber" href="(916) 278-6011">(916) 278-6011</a>
-            </div>
-        </div>
-        <div class="footer2">
-            
-        </div>
-    </body>
-</html>
+nav {
+    background-color: #ffffff;
+}
+header {
+    margin: 0px;
+    height:200px;
+    background-image: linear-gradient(270deg, rgba(196,182,129,0) 60%, rgba(0,78,56,0.6) 60%, rgba(0,78,56,1) 100%), url('images/structurev-2000.jpg');
+    background-size: cover;
+    text-align: left;
+}
+body {
+  background-color:	rgb(0,78,56);
+  /*background-color: #ffffff;*/
+  margin: 0px;
+  font-family: sans-serif;
+}
+hr {
+    height: 7px;
+    border-width: 0px;
+    background-color: #c4b581;
+    margin: 0px;
+}
+input[type=text], focus {
+    outline: none;
+    width: 10%;
+    border: none;
+    box-sizing: border-box;
+    border-bottom: 2px solid	rgb(0,78,56);
+}
+
+.topGBorder{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+    height: 7px;
+    background-image: linear-gradient(to right, #481c63 0%, #f9c606 28%, #58b947 64%, #008453 100%);
+}
+.breadCrumbs{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+    height: 35px;
+    background-color: black;
+    border-radius: 0px;
+}
+.sections {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    /*background-color: rgb(0,78,56);*/
+    background-color: #E4C505;
+    height: 2px;
+}
+.bottomGBorder{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 30px;
+    height: 7px;
+    background-image: linear-gradient(to right, #481c63 0%, #f9c606 28%, #58b947 64%, #008453 100%);
+}
+.footer{
+    background-color: black;
+    height: 130px;
+}
+
+.footer2{
+    background-color: rgb(0,46,35);
+    height: 50px;
+}
+.sacstate_logo{
+    height: 60%;
+    margin-top: 2%;
+    margin-left: 4%;
+    float: left;
+}
+.sacstate_info{
+    display: inline-block;
+    color: white;
+    margin-left: 40%;
+    margin-top: 3%;
+}
+.phoneNumber{
+    color: #c4b581;
+}
+.banner {
+    margin: 0px;
+    width: 40%;
+    height: 200px;
+    float: left;
+}
+.banner_text {
+    padding-top: 20px;
+    padding-bottom: 0px;
+    padding-left: 50px;
+    margin: 10px;
+    text-align: left;
+    color: #ffffff;
+}
+.banner_alt_text {
+    padding-top: 0px;
+    padding-bottom: 100px;
+    padding-left: 60px;
+    margin: 0px;
+    text-align: left;
+    color: #f0e1b0;
+}
+.time {
+    margin: 0px;
+    padding: 0px;
+    color:black;
+    text-align: center;
+}
+.surveyLayout {
+    margin-top: 30px;
+    margin-left: 15%;
+    margin-right: 15%;
+    /*border: 4px outset #f0e1b0;*/
+    /*background-color: #f0e1b0;*/
+    background-color: #ffffff;
+    position: relative;
+    box-shadow: 0px 0px 5px 2px #292929;
+}
+
+.layoutBorder {
+    margin-left: 0%;
+    margin-right: 0%;
+    height: 10px;
+    background-image: linear-gradient(to right, #0B531D, #0AB823);
+}
+
+.timeTraveled {
+    padding-top: 1%;
+    text-align: center;
+    font-size: 150%;
+    color: rgb(0,78,56);
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.time {
+    text-align: center;
+}
+.haveCar {
+    text-align: center;
+    font-size: 150%;
+    color: rgb(0,78,56);
+}
+.car{
+    text-align: center;
+}
+.typeOfCar{
+    text-align: center;
+    margin-bottom: 10px;
+    display: none;
+}
+.carlist{
+    display: none;
+    margin-left: 46%;
+}
+.mpgLabel{
+    text-align: center;
+    display: none;
+}
+.mpg{
+    margin-bottom: 0px;
+    margin-left: 44.5%;
+    display: none;
+}
+.canCarpool {
+    text-align: center;
+    font-size: 150%;
+    color: rgb(0,78,56);
+}
+.carpool {
+    text-align: center;
+}
+.distance {
+    text-align: center;
+    font-size: 150%;
+    color: rgb(0,78,56);
+}
+
+.distanceAmount {
+    text-align: center;
+}
+.submit {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-top: 50px;
+    margin-left: 43%;
+    margin-bottom: 50px;
+    border-radius: 8px;
+    font-size: 100%;
+    background-color: #BEB86F;
+    position: relative;
+    text-align: center;
+    color: black;
+}
