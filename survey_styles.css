@@ -49,8 +49,8 @@ input[type=text], focus {
     margin-top: 20px;
     margin-right: 20px;
     margin-left: 20px;
-    /*background-color: rgb(0,78,56);*/
-    background-color: #E4C505;
+    background-color: rgb(0,78,56);
+    /*background-color: #E4C505;*/
     height: 2px;
 }
 .bottomGBorder{
@@ -67,7 +67,7 @@ input[type=text], focus {
 
 .footer2{
     background-color: rgb(0,46,35);
-    height: 50px;
+    height: 40px;
 }
 .sacstate_logo{
     height: 60%;
