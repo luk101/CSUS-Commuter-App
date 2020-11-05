@@ -10,6 +10,7 @@ header {
 }
 body {
   background-color:	rgb(0,78,56);
+  /*background-color: #ffffff;*/
   margin: 0px;
   font-family: sans-serif;
 }
@@ -19,67 +20,56 @@ hr {
     background-color: #c4b581;
     margin: 0px;
 }
-.first{
-    /*height: 7px;
-    border-width: 0px;
-    background-color: green;*/
-    /*width: 100%;*/
+input[type=text], focus {
+    outline: none;
+    width: 10%;
+    border: none;
+    box-sizing: border-box;
+    border-bottom: 2px solid	rgb(0,78,56);
+}
+
+.topGBorder{
     padding-top: 0px;
     padding-bottom: 0px;
     margin: 0px;
     height: 7px;
     background-image: linear-gradient(to right, #481c63 0%, #f9c606 28%, #58b947 64%, #008453 100%);
 }
-.second{
+.breadCrumbs{
     padding-top: 0px;
     padding-bottom: 0px;
     margin: 0px;
     height: 35px;
     background-color: black;
     border-radius: 0px;
-    border-color: black;
 }
-.third {
+.sections {
     padding-left: 0px;
     padding-right: 0px;
     margin-top: 20px;
     margin-right: 20px;
     margin-left: 20px;
-    background-color: rgb(0,78,56);
-    height: 2px;
-
-}
-.fourth {
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-right: 20px;
-    margin-left: 20px;
-    background-color: rgb(0,78,56);
+    /*background-color: rgb(0,78,56);*/
+    background-color: #E4C505;
     height: 2px;
 }
-.fifth {
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-right: 20px;
-    margin-left: 20px;
-    background-color: rgb(0,78,56);
-    height: 2px;
-}
-.sixth{
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-right: 20px;
-    margin-left: 20px;
-    background-color: rgb(0,78,56);
-    height: 2px;
-}
-.seventh{
+.bottomGBorder{
     padding-top: 0px;
     padding-bottom: 0px;
-    margin-top: 70px;
+    margin-top: 30px;
     height: 7px;
     background-image: linear-gradient(to right, #481c63 0%, #f9c606 28%, #58b947 64%, #008453 100%);
 }
+.footer{
+    background-color: black;
+    height: 150px;
+}
+
+.footer2{
+    background-color: rgb(0,46,35);
+    height: 50px;
+}
+
 .banner {
     margin: 0px;
     width: 40%;
@@ -105,21 +95,29 @@ hr {
 .time {
     margin: 0px;
     padding: 0px;
-    /*border-radius: 25px;*/
     color:black;
     text-align: center;
 }
 .surveyLayout {
     margin-top: 30px;
-    margin-left: 175px;
-    margin-right: 175px;
-    padding-bottom: 0px;
-    border: 4px outset #f0e1b0;
-    /*background-color:  #f0e1b0;*/
-    background-color: #f0e1b0;
+    margin-left: 15%;
+    margin-right: 15%;
+    /*border: 4px outset #f0e1b0;*/
+    /*background-color: #f0e1b0;*/
+    background-color: #ffffff;
     position: relative;
+    box-shadow: 0px 0px 5px 2px #292929;
 }
+
+.layoutBorder {
+    margin-left: 0%;
+    margin-right: 0%;
+    height: 10px;
+    background-image: linear-gradient(to right, #0B531D, #0AB823);
+}
+
 .timeTraveled {
+    padding-top: 1%;
     text-align: center;
     font-size: 150%;
     color: rgb(0,78,56);
@@ -144,7 +142,7 @@ hr {
 }
 .carlist{
     display: none;
-    margin-left: 420px;
+    margin-left: 46%;
 }
 .mpgLabel{
     text-align: center;
@@ -152,7 +150,7 @@ hr {
 }
 .mpg{
     margin-bottom: 0px;
-    margin-left: 370px;
+    margin-left: 44.5%;
     display: none;
 }
 .canCarpool {
@@ -182,8 +180,8 @@ hr {
     margin-bottom: 50px;
     border-radius: 8px;
     font-size: 100%;
-    background-color: #ffffff;
+    background-color: #BEB86F;
     position: relative;
     text-align: center;
-    color: rgb(0,78,56);
+    color: black;
 }
