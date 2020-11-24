@@ -41,15 +41,11 @@ body {
 	height: 300px;
 }
 
-.travel_option {
+.travel_categories {
+	color: #1D3C34;
 	text-align: center;
+	font-size: 40px;
 }
-
-.travel_time {
-	text-align: center;
-
-	
-}	
 
 .result_boxes_left {
 	background-color: #1D3C34;
@@ -71,6 +67,13 @@ body {
 .result_write {
 	color: #1D3C34;
 	text-align: center;
+	
+}
+
+.result_write_top {
+	color: #1D3C34;
+	text-align: center;
+	font-size: 30px;
 	
 }
 
